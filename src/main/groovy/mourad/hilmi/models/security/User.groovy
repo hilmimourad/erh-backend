@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id
  * Created by moura on 5/20/2017.
  */
 
-class User {
+class User implements Serializable {
     @Id
     String id;
 

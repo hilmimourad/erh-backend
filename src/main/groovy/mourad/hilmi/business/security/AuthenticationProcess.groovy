@@ -22,7 +22,6 @@ class AuthenticationProcess {
         if(user.password != hasher.hash(password)) return null
 
         user.password = null;
-
         return user
     }
 }

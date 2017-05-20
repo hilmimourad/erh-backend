@@ -1,6 +1,7 @@
 package mourad.hilmi.controls.security
 
 import mourad.hilmi.business.security.AuthenticationProcess
+import mourad.hilmi.commons.jwt.JWTHelper
 import mourad.hilmi.models.security.User
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.RequestBody
@@ -15,10 +16,13 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping('/security')
 class AuthenticationController {
     @Autowired AuthenticationProcess authenticationProcess
+    @Autowired JWTHelper jwtHelper
 
     @RequestMapping(value='/authenticate',method = RequestMethod.POST)
-    User authentify(@RequestBody AuthenticationRequest payload){
+    AuthenticationWrapper.Response authenticate(@RequestBody AuthenticationWrapper.Request payload){
         def response = authenticationProcess.authenticate(payload.email, payload.password)
-        response
+        response.id = null
+        def token = jwtHelper.tokenize(response.toString())
+        new AuthenticationWrapper.Response(token: token,user: response)
     }
 }
