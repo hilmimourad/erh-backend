@@ -1,5 +1,6 @@
 package mourad.hilmi.controls.security
 
+import com.sun.org.apache.xpath.internal.operations.Bool
 import mourad.hilmi.business.security.AuthenticationProcess
 import mourad.hilmi.commons.jwt.JWTHelper
 import mourad.hilmi.models.security.User
@@ -27,5 +28,11 @@ class AuthenticationController {
         response.id = null
         def token = jwtHelper.tokenize(response.toString())
         new AuthenticationWrapper.Response(token: token,user: response)
+    }
+
+    @RequestMapping(value = '/checkToken',method = RequestMethod.POST)
+    Boolean checkToken(@RequestBody String token) {
+        def response = jwtHelper.deTokenize(token)
+        response !=  null
     }
 }
