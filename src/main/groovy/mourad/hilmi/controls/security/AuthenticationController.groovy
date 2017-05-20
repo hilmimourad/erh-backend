@@ -21,6 +21,9 @@ class AuthenticationController {
     @RequestMapping(value='/authenticate',method = RequestMethod.POST)
     AuthenticationWrapper.Response authenticate(@RequestBody AuthenticationWrapper.Request payload){
         def response = authenticationProcess.authenticate(payload.email, payload.password)
+
+        if(response == null) return null
+
         response.id = null
         def token = jwtHelper.tokenize(response.toString())
         new AuthenticationWrapper.Response(token: token,user: response)

@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3b65360-928f-46bb-be8f-a9840e909508" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/commons/jwt/JWTConfig.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/commons/jwt/JWTHelper.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/commons/jwt/NimbusJWT.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/Hello.class" afterPath="$PROJECT_DIR$/build/classes/main/Hello.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/mourad/hilmi/EHRApplication.class" afterPath="$PROJECT_DIR$/build/classes/main/mourad/hilmi/EHRApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/mourad/hilmi/controls/HelloController.class" afterPath="$PROJECT_DIR$/build/classes/main/mourad/hilmi/controls/HelloController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/ehr_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/ehr_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/ehr_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/ehr_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/EHRApplication.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/EHRApplication.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/business/security/AuthenticationProcess.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/business/security/AuthenticationProcess.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/controls/security/AuthenticationController.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/controls/security/AuthenticationController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/controls/security/AuthenticationRequest.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/controls/security/AuthenticationRequest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/models/security/User.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/mourad/hilmi/models/security/User.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -74,8 +59,8 @@
       <file leaf-file-name="AuthenticationController.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/mourad/hilmi/controls/security/AuthenticationController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state relative-caret-position="357">
+              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
               <folding>
                 <element signature="e#40#99#0" expanded="true" />
               </folding>
@@ -1440,12 +1425,12 @@
       <option name="presentableId" value="Default" />
       <updated>1495237494863</updated>
       <workItem from="1495237507910" duration="3000" />
-      <workItem from="1495237618749" duration="13604000" />
+      <workItem from="1495237618749" duration="13683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13607000" />
+    <option name="totallyTimeSpent" value="13686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1040" height="754" extended-state="6" />
@@ -1731,8 +1716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/mourad/hilmi/controls/security/AuthenticationController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="357">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
             <element signature="e#40#99#0" expanded="true" />
           </folding>
