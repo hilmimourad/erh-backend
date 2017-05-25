@@ -18,8 +18,6 @@ class EHRApplication implements CommandLineRunner {
 
     @Autowired private SetupWizard setupWizard;
 
-    @Autowired JWTConfig config
-
 
     static void main(String[] args){
         SpringApplication.run(EHRApplication.class,args)
@@ -28,7 +26,6 @@ class EHRApplication implements CommandLineRunner {
     @Override
     void run(String... args) throws Exception {
       setupWizard.setup()
-        println "SECRET" + config.secret
     }
 
 }

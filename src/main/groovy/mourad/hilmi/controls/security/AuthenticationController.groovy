@@ -1,9 +1,7 @@
 package mourad.hilmi.controls.security
 
-import com.sun.org.apache.xpath.internal.operations.Bool
 import mourad.hilmi.business.security.AuthenticationProcess
 import mourad.hilmi.commons.jwt.JWTHelper
-import mourad.hilmi.models.security.User
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
@@ -23,7 +21,8 @@ class AuthenticationController {
     AuthenticationWrapper.Response authenticate(@RequestBody AuthenticationWrapper.Request payload){
         def response = authenticationProcess.authenticate(payload.email, payload.password)
 
-        if(response == null) return null
+        if(response == null)
+            return new AuthenticationWrapper.Response(token: null,user:null)
 
         response.id = null
         def token = jwtHelper.tokenize(response.toString())

@@ -6,6 +6,6 @@ package mourad.hilmi.models.security
 class SecurityModelsConstants {
 
     class Privileges {
-        static String MANAGE_USERS = "manage_users";
+        static String MANAGE_USERS = "manage_users"
     }
 }

@@ -18,6 +18,7 @@ class SetupWizard {
     @Autowired RoleDAO roleDAO;
     @Autowired UserDAO userDAO;
     @Autowired Hasher hasher;
+    @Autowired SetupConfiguration configuration
 
     void setup(){
         setupFirstRoles()
@@ -38,9 +39,9 @@ class SetupWizard {
     }
 
     private void setupFirstUser () {
-        String email = "admin@users.com"
-        String password = "admin"
-        String fullName = "Admin"
+        String email = configuration.email
+        String password = configuration.password
+        String fullName = configuration.fullName
         def user = userDAO.findByEmail(email)
 
         //Check if user is already set

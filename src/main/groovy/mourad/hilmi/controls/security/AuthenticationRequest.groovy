@@ -8,9 +8,12 @@ import mourad.hilmi.models.security.User
  */
 class AuthenticationWrapper {
 
+    private AuthenticationWrapper(){
+        //Private constructor to hide public on
+    }
+
     static class Request {
-        String email;
-        String password;
+        String email, password
     }
 
     static class Response {
